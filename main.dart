@@ -6,7 +6,6 @@ void main() {
   var item1 = Item('Soda', 2.50);
   var item2 = Item('Chips', 1.50);
   var item3 = Item('Candy', 1.00);
-
   var stock1 = ItemStock(item1, 10);
   var stock2 = ItemStock(item2, 5);
   var stock3 = ItemStock(item3, 0);
