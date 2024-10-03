@@ -49,14 +49,16 @@ class VendingMachine {
     print('Items Available:');
     for (var i = 0; i < _items.length; i++) {
       var stock = _items[i];
-      var stockStatus = stock.isInStock() ? 'Stock: ${stock.stock}' : 'Out of stock';
+      var stockStatus =
+          stock.isInStock() ? 'Stock: ${stock.stock}' : 'Out of stock';
       print('${i + 1}. ${stock.displayItem()} (${stockStatus})');
     }
   }
 
   void insertMoney(double amount) {
     _balance += amount;
-    print('Inserted: ${amount.toStringAsFixed(2)}, Total Balance: ${_balance.toStringAsFixed(2)}');
+    print(
+        'Inserted: ${amount.toStringAsFixed(2)}, Total Balance: ${_balance.toStringAsFixed(2)}');
   }
 
   void selectItem(String itemName) {
@@ -70,7 +72,8 @@ class VendingMachine {
     } else if (!itemStock.isInStock()) {
       print('$itemName is out of stock.');
     } else {
-      print('Selected: ${itemStock.itemName}, Price: ${itemStock.itemPrice.toStringAsFixed(2)}');
+      print(
+          'Selected: ${itemStock.itemName}, Price: ${itemStock.itemPrice.toStringAsFixed(2)}');
     }
   }
 

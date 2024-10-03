@@ -2,7 +2,6 @@ import 'item.dart';
 
 void main() {
   print('Welcome to the Vending Machine!\n');
-
   var item1 = Item('Soda', 2.50);
   var item2 = Item('Chips', 1.50);
   var item3 = Item('Candy', 1.00);
